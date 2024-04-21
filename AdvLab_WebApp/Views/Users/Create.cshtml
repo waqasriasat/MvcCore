@@ -1,0 +1,181 @@
+﻿@model AdvLab_WebApp.Models.User
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="ActionHeading">
+    <div class="card panalheading">
+
+        <h2>CREATE ORDER</h2>
+
+    </div>
+    <div class="col-12 col-md-12 col-sm-12">
+        <form id="UserCreateForm" enctype="multipart/form-data" method="post"  asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <p>
+                <a asp-action="Index">
+                    <i class="fa fa-arrow-left BtnIcon2 HomeIcon"></i>
+                </a>
+                <a href="#" id="submitButton">
+                    <i class="fa fa-save BtnIcon1 HomeIcon"></i>
+                </a>
+            </p>
+
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-4" style="display:none">
+                    <div class="form-group">
+                        <label asp-for="EmpId" class="control-label"></label>
+                        <input asp-for="EmpId" class="form-control" readonly="readonly" />
+                        <span asp-validation-for="EmpId" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="form-group">
+                        <label asp-for="Uname" class="control-label">User Name</label>
+                        <input asp-for="Uname" class="form-control" />
+                        <span asp-validation-for="Uname" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="form-group">
+                        <label asp-for="Upassword" class="control-label">Password</label>
+                        <input asp-for="Upassword" class="form-control" />
+                        <span asp-validation-for="Upassword" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="form-group">
+                        <label asp-for="Status" class="control-label"></label>
+                        <select asp-for="Status" asp-items="@(new SelectList(ViewBag.StatusList, "Value", "Text", Model.Status))" class="form-control">
+                        </select>
+                        <span asp-validation-for="Status" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="form-group">
+                        <label asp-for="Location" class="control-label"></label>
+                        <select asp-for="Location" asp-items="@(new SelectList(ViewBag.LocationList, "Value", "Text", Model.Location))" class="form-control">
+                        </select>
+                        <span asp-validation-for="Location" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="form-group">
+                        <label asp-for="Cnl" class="control-label">CNL</label>
+                        <input asp-for="Cnl" class="form-control" readonly="readonly" />
+                        <span asp-validation-for="Cnl" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="form-group">
+                        <label asp-for="ClientV" class="control-label">Client Viewer</label>
+                        <select asp-for="ClientV" asp-items="@(new SelectList(ViewBag.ClientVList, "Value", "Text", Model.ClientV))" class="form-control">
+                        </select>
+                        <span asp-validation-for="ClientV" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="form-group">
+                        <label asp-for="Placement" class="control-label"></label>
+                        <input asp-for="Placement" class="form-control" readonly="readonly" />
+                        <span asp-validation-for="Placement" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="form-group">
+                        <label asp-for="Depart" class="control-label"></label>
+                        <input asp-for="Depart" class="form-control" readonly="readonly" />
+                        <span asp-validation-for="Depart" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="form-group">
+                        <label asp-for="SubDepart" class="control-label"></label>
+                        <select asp-for="SubDepart" asp-items="@(new SelectList(ViewBag.SubDepartList, "Value", "Text", Model.SubDepart))" class="form-control">
+                        </select>
+                        <span asp-validation-for="SubDepart" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="form-group">
+                        <label asp-for="Designation" class="control-label"></label>
+                        <select asp-for="Designation" asp-items="@(new SelectList(ViewBag.DesignationList, "Value", "Text", Model.Designation))" class="form-control">
+                        </select>
+                        <span asp-validation-for="Designation" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="form-group">
+                        <label asp-for="RoleId" class="control-label">Role Name</label>
+                        <select asp-for="RoleId" asp-items="@(new SelectList(ViewBag.RoleList, "Value", "Text", Model.RoleId))" class="form-control">
+                        </select>
+                        <span asp-validation-for="RoleId" class="text-danger"></span>
+                    </div>
+                </div>
+                @* <div class="col-12 col-md-12 col-lg-12">
+                    <br />
+                    <br />
+                    <div class="btn-group" role="group" aria-label="Actions">
+                        <input type="submit" value="Create" class="btn btn-success" />
+                    </div>
+                    <div class="btn-group" role="group" aria-label="Actions">
+                        <input type="submit" value="Back to List" asp-action="Index" class="btn btn-outline-secondary" />
+                    </div>
+                </div> *@
+            </div>
+            <br />
+            <br />
+        </form>
+    </div>
+</div>
+<hr />
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation.unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(document).on("change", "#SubDepart", function () {
+                var subDepartValue = $("#SubDepart").val();
+
+                $.ajax({
+                    url: "/Users/GetPlacementAndDepartBySubDepart",
+                    method: "POST",
+                    data: { subDepartValue: subDepartValue },
+                    success: function (response) {
+                        // Set the values for Placement and Depart fields
+                        $("#Placement").val(response.placement);
+                        $("#Depart").val(response.depart);
+
+                        console.log(response);
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
+            });
+        });
+        $(document).ready(function () {
+            $(document).on("change", "#Location", function () {
+                var LocationValue = $("#Location").val();
+                $.ajax({
+                    url: "/Users/GetCNLByLocation",
+                    method: "POST",
+                    data: { LocationValue: LocationValue },
+                    success: function (response) {
+                        $("#Cnl").val(response.cnl);
+                        console.log(response);
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        document.getElementById("submitButton").addEventListener("click", function () {
+            document.getElementById("UserCreateForm").submit();
+        });
+    </script>
+                    }

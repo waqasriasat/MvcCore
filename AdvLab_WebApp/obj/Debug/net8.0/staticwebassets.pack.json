@@ -1,0 +1,877 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AdvLab_WebApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\AdvLab_WebApp.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\Custom.css",
+      "PackagePath": "staticwebassets\\css\\Custom.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\Formgroud.css",
+      "PackagePath": "staticwebassets\\css\\Formgroud.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\all.css",
+      "PackagePath": "staticwebassets\\css\\all.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\css\\all.min.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\brands.css",
+      "PackagePath": "staticwebassets\\css\\brands.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\brands.min.css",
+      "PackagePath": "staticwebassets\\css\\brands.min.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\css\\fontawesome.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\regular.css",
+      "PackagePath": "staticwebassets\\css\\regular.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\regular.min.css",
+      "PackagePath": "staticwebassets\\css\\regular.min.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\solid.css",
+      "PackagePath": "staticwebassets\\css\\solid.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\solid.min.css",
+      "PackagePath": "staticwebassets\\css\\solid.min.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\svg-with-js.css",
+      "PackagePath": "staticwebassets\\css\\svg-with-js.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\svg-with-js.min.css",
+      "PackagePath": "staticwebassets\\css\\svg-with-js.min.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\v4-font-face.css",
+      "PackagePath": "staticwebassets\\css\\v4-font-face.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\v4-font-face.min.css",
+      "PackagePath": "staticwebassets\\css\\v4-font-face.min.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\v4-shims.css",
+      "PackagePath": "staticwebassets\\css\\v4-shims.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\v4-shims.min.css",
+      "PackagePath": "staticwebassets\\css\\v4-shims.min.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\v5-font-face.css",
+      "PackagePath": "staticwebassets\\css\\v5-font-face.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\css\\v5-font-face.min.css",
+      "PackagePath": "staticwebassets\\css\\v5-font-face.min.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\datatable\\datatables.min.css",
+      "PackagePath": "staticwebassets\\datatable\\datatables.min.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\datatable\\datatables.min.js",
+      "PackagePath": "staticwebassets\\datatable\\datatables.min.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\0014df6e-bac9-467a-a907-d21dacc52eea_1.png",
+      "PackagePath": "staticwebassets\\images\\0014df6e-bac9-467a-a907-d21dacc52eea_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\02a28527-8e3f-480a-92a4-6739d9027c28_3.png",
+      "PackagePath": "staticwebassets\\images\\02a28527-8e3f-480a-92a4-6739d9027c28_3.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\082f59a0-46d8-406e-b8c2-654efe480c9a_Screenshot 2024-01-09 231006.png",
+      "PackagePath": "staticwebassets\\images\\082f59a0-46d8-406e-b8c2-654efe480c9a_Screenshot 2024-01-09 231006.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\0d24c435-5a2d-4bab-bf5b-9aac0edc7bcf_1.png",
+      "PackagePath": "staticwebassets\\images\\0d24c435-5a2d-4bab-bf5b-9aac0edc7bcf_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\13b81abf-6165-4886-9c35-eabebef1e779_4.jpg",
+      "PackagePath": "staticwebassets\\images\\13b81abf-6165-4886-9c35-eabebef1e779_4.jpg"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\13ef2245-97ea-4cf6-90df-329569ddba20_1.png",
+      "PackagePath": "staticwebassets\\images\\13ef2245-97ea-4cf6-90df-329569ddba20_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\1414adcf-fd6b-4aa4-a659-8e315935e09a_1.png",
+      "PackagePath": "staticwebassets\\images\\1414adcf-fd6b-4aa4-a659-8e315935e09a_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\1422cc63-cef0-40c8-9b48-ff055f39a9eb_1.png",
+      "PackagePath": "staticwebassets\\images\\1422cc63-cef0-40c8-9b48-ff055f39a9eb_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\147298ca-4af1-4569-9cec-69770ba24c0b_3.png",
+      "PackagePath": "staticwebassets\\images\\147298ca-4af1-4569-9cec-69770ba24c0b_3.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\1657b7d6-2712-4138-bb10-fb9f795f4e07_1.png",
+      "PackagePath": "staticwebassets\\images\\1657b7d6-2712-4138-bb10-fb9f795f4e07_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\1b0df4df-e3fc-4cc5-8ccd-9a8a603a704d_1.png",
+      "PackagePath": "staticwebassets\\images\\1b0df4df-e3fc-4cc5-8ccd-9a8a603a704d_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\1b1a8ff8-9af7-48fe-b571-a38d400c992f_1.png",
+      "PackagePath": "staticwebassets\\images\\1b1a8ff8-9af7-48fe-b571-a38d400c992f_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\1bdd07bd-01ba-429f-8c99-634cd4092324_1.png",
+      "PackagePath": "staticwebassets\\images\\1bdd07bd-01ba-429f-8c99-634cd4092324_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\1c71a114-8730-4df3-a8da-63f1b3358aa0_Screenshot (3).png",
+      "PackagePath": "staticwebassets\\images\\1c71a114-8730-4df3-a8da-63f1b3358aa0_Screenshot (3).png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\1d5af9d8-5631-45a1-a5ee-00cbcd65b1c1_1.png",
+      "PackagePath": "staticwebassets\\images\\1d5af9d8-5631-45a1-a5ee-00cbcd65b1c1_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\1e130d6a-ea90-4f6d-9bb9-b482d6490157_3.png",
+      "PackagePath": "staticwebassets\\images\\1e130d6a-ea90-4f6d-9bb9-b482d6490157_3.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\1ed41779-0e4f-4cf4-bac0-d001d530f2d3_Screenshot 2024-01-02 041925.png",
+      "PackagePath": "staticwebassets\\images\\1ed41779-0e4f-4cf4-bac0-d001d530f2d3_Screenshot 2024-01-02 041925.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\1f44886e-506f-4cef-bd30-4e9e9e8a78de_3.png",
+      "PackagePath": "staticwebassets\\images\\1f44886e-506f-4cef-bd30-4e9e9e8a78de_3.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\2108481d-45b4-4f39-b87b-1d64740e89ce_Screenshot 2024-01-05 093823.png",
+      "PackagePath": "staticwebassets\\images\\2108481d-45b4-4f39-b87b-1d64740e89ce_Screenshot 2024-01-05 093823.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\210e89e9-ca9e-4f37-b169-b0479ed2a8d9_1.png",
+      "PackagePath": "staticwebassets\\images\\210e89e9-ca9e-4f37-b169-b0479ed2a8d9_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\28183577-ee68-4894-95fd-8213676cfee0_3.png",
+      "PackagePath": "staticwebassets\\images\\28183577-ee68-4894-95fd-8213676cfee0_3.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\2a733ee6-4790-4f0b-850f-4f12411ba828_Screenshot (2).png",
+      "PackagePath": "staticwebassets\\images\\2a733ee6-4790-4f0b-850f-4f12411ba828_Screenshot (2).png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\32a11742-9398-450e-a502-53348edbb4ae_Screenshot 2023-12-28 024956.png",
+      "PackagePath": "staticwebassets\\images\\32a11742-9398-450e-a502-53348edbb4ae_Screenshot 2023-12-28 024956.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\33535a8a-e051-49c0-9973-7742d65b4a81_1.png",
+      "PackagePath": "staticwebassets\\images\\33535a8a-e051-49c0-9973-7742d65b4a81_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\33cd95ee-c936-4fdd-a211-a3886cc3243c_1.png",
+      "PackagePath": "staticwebassets\\images\\33cd95ee-c936-4fdd-a211-a3886cc3243c_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\3643b220-5c9f-4178-84c4-1538cd6e29dd_1.png",
+      "PackagePath": "staticwebassets\\images\\3643b220-5c9f-4178-84c4-1538cd6e29dd_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\420084a2-7ab4-46cf-b1fc-f1b95253fc48_Screenshot (2).png",
+      "PackagePath": "staticwebassets\\images\\420084a2-7ab4-46cf-b1fc-f1b95253fc48_Screenshot (2).png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\44800261-f334-43b0-8893-fa0439c12633_4.png",
+      "PackagePath": "staticwebassets\\images\\44800261-f334-43b0-8893-fa0439c12633_4.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\455777ae-2463-4932-a45e-08907dad72f5_1.png",
+      "PackagePath": "staticwebassets\\images\\455777ae-2463-4932-a45e-08907dad72f5_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\49105ea8-068d-4554-8162-9153ae039feb_Screenshot (3).png",
+      "PackagePath": "staticwebassets\\images\\49105ea8-068d-4554-8162-9153ae039feb_Screenshot (3).png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\4ab693ed-aa38-4e05-8814-52d771571bac_Screenshot (2).png",
+      "PackagePath": "staticwebassets\\images\\4ab693ed-aa38-4e05-8814-52d771571bac_Screenshot (2).png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\4ceaba2d-ea34-4b26-89ea-473616ccee2b_Screenshot 2024-01-04 001751.png",
+      "PackagePath": "staticwebassets\\images\\4ceaba2d-ea34-4b26-89ea-473616ccee2b_Screenshot 2024-01-04 001751.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\4e27c975-a7fe-4133-9ff1-5456497eca5f_1.png",
+      "PackagePath": "staticwebassets\\images\\4e27c975-a7fe-4133-9ff1-5456497eca5f_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\4f3f6cdd-8e9b-4f0f-b2dc-9351a98f776f_1.png",
+      "PackagePath": "staticwebassets\\images\\4f3f6cdd-8e9b-4f0f-b2dc-9351a98f776f_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\5309338d-12ea-4419-918f-a9597c816e99_1.png",
+      "PackagePath": "staticwebassets\\images\\5309338d-12ea-4419-918f-a9597c816e99_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\5348fc46-e4fc-407b-9978-cb420f1c5047_1.png",
+      "PackagePath": "staticwebassets\\images\\5348fc46-e4fc-407b-9978-cb420f1c5047_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\56fd9789-a9df-490f-b857-11638839eeb2_Screenshot (2).png",
+      "PackagePath": "staticwebassets\\images\\56fd9789-a9df-490f-b857-11638839eeb2_Screenshot (2).png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\57e21fc6-c3c4-4311-a1e6-b232bad37834_Screenshot 2024-01-05 093823.png",
+      "PackagePath": "staticwebassets\\images\\57e21fc6-c3c4-4311-a1e6-b232bad37834_Screenshot 2024-01-05 093823.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\5a8d5cfc-87fc-4cd4-860f-e0680f585e3f_Screenshot 2024-01-05 093854.png",
+      "PackagePath": "staticwebassets\\images\\5a8d5cfc-87fc-4cd4-860f-e0680f585e3f_Screenshot 2024-01-05 093854.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\5e3e1824-336c-4e84-b0d0-393e4c209cbd_1.png",
+      "PackagePath": "staticwebassets\\images\\5e3e1824-336c-4e84-b0d0-393e4c209cbd_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\6604c379-1013-469c-8dc6-ee3156d08a0b_4.png",
+      "PackagePath": "staticwebassets\\images\\6604c379-1013-469c-8dc6-ee3156d08a0b_4.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\664a1e37-0147-4868-8227-3b87e11cbc17_1.png",
+      "PackagePath": "staticwebassets\\images\\664a1e37-0147-4868-8227-3b87e11cbc17_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\66d9c0a5-60c6-4d8e-91a8-3f518b4242f6_1.png",
+      "PackagePath": "staticwebassets\\images\\66d9c0a5-60c6-4d8e-91a8-3f518b4242f6_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\68b8ec57-b76a-457a-bf72-1a13c0538edc_1.png",
+      "PackagePath": "staticwebassets\\images\\68b8ec57-b76a-457a-bf72-1a13c0538edc_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\6e3007d5-d404-4267-a2e9-72f61c6537b0_1.png",
+      "PackagePath": "staticwebassets\\images\\6e3007d5-d404-4267-a2e9-72f61c6537b0_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\6e5356bb-4484-45fd-bbd3-abaf2da0b641_1.png",
+      "PackagePath": "staticwebassets\\images\\6e5356bb-4484-45fd-bbd3-abaf2da0b641_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\71f70a63-6116-4601-abde-14f34a8e5406_3.png",
+      "PackagePath": "staticwebassets\\images\\71f70a63-6116-4601-abde-14f34a8e5406_3.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\7524aea8-e88e-4e7b-8a02-89ad5e6e0609_1.png",
+      "PackagePath": "staticwebassets\\images\\7524aea8-e88e-4e7b-8a02-89ad5e6e0609_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\78463938-1553-4fdb-8832-ca959e589e34_1.png",
+      "PackagePath": "staticwebassets\\images\\78463938-1553-4fdb-8832-ca959e589e34_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\7b078346-63a5-4c93-8e30-688a06b1fdc6_3.png",
+      "PackagePath": "staticwebassets\\images\\7b078346-63a5-4c93-8e30-688a06b1fdc6_3.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\7b926793-8467-4a49-84b5-9f570ba37924_Screenshot (3).png",
+      "PackagePath": "staticwebassets\\images\\7b926793-8467-4a49-84b5-9f570ba37924_Screenshot (3).png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\80ba3f9b-cd84-4122-920a-917c58db5fb0_3.png",
+      "PackagePath": "staticwebassets\\images\\80ba3f9b-cd84-4122-920a-917c58db5fb0_3.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\85bff940-fd0e-4074-a72f-8eb14e2223aa_Screenshot 2024-01-05 093854.png",
+      "PackagePath": "staticwebassets\\images\\85bff940-fd0e-4074-a72f-8eb14e2223aa_Screenshot 2024-01-05 093854.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\87813655-64da-4d40-9ad9-c39546e9b2a2_Screenshot 2024-01-03 093702.png",
+      "PackagePath": "staticwebassets\\images\\87813655-64da-4d40-9ad9-c39546e9b2a2_Screenshot 2024-01-03 093702.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\8d9f12d8-7b78-47ae-b4d5-1e9c525f6a93_Screenshot (3).png",
+      "PackagePath": "staticwebassets\\images\\8d9f12d8-7b78-47ae-b4d5-1e9c525f6a93_Screenshot (3).png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\8e757f7c-a73d-4bdd-97b1-6bef4930ccef_Screenshot (2).png",
+      "PackagePath": "staticwebassets\\images\\8e757f7c-a73d-4bdd-97b1-6bef4930ccef_Screenshot (2).png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\91ad5e44-323e-4cfc-ba99-fded295a29e6_Screenshot 2024-01-09 231006.png",
+      "PackagePath": "staticwebassets\\images\\91ad5e44-323e-4cfc-ba99-fded295a29e6_Screenshot 2024-01-09 231006.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\93fd870f-4c14-458d-a224-c8ddd1a69cea_1.png",
+      "PackagePath": "staticwebassets\\images\\93fd870f-4c14-458d-a224-c8ddd1a69cea_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\943b5da8-d0b8-4e34-96fe-f3c0a0b2a053_Screenshot 2024-01-05 093854.png",
+      "PackagePath": "staticwebassets\\images\\943b5da8-d0b8-4e34-96fe-f3c0a0b2a053_Screenshot 2024-01-05 093854.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\974f36e3-c964-4aae-b0e1-e53db81e34ad_1.png",
+      "PackagePath": "staticwebassets\\images\\974f36e3-c964-4aae-b0e1-e53db81e34ad_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\9853e015-2c18-486d-af8d-6d394aca972c_Screenshot (3).png",
+      "PackagePath": "staticwebassets\\images\\9853e015-2c18-486d-af8d-6d394aca972c_Screenshot (3).png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\9a168c48-f914-4ce9-a069-2732271e2e02_1.png",
+      "PackagePath": "staticwebassets\\images\\9a168c48-f914-4ce9-a069-2732271e2e02_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\9b008f4b-12c9-423a-a930-671561ed41a6_4.jpg",
+      "PackagePath": "staticwebassets\\images\\9b008f4b-12c9-423a-a930-671561ed41a6_4.jpg"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\9b8eb5b1-3e6f-4555-942d-29612a144a23_1.png",
+      "PackagePath": "staticwebassets\\images\\9b8eb5b1-3e6f-4555-942d-29612a144a23_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\9ba24c1e-2c48-4b2a-aa6e-b943893cd9ca_Screenshot 2024-01-05 093823.png",
+      "PackagePath": "staticwebassets\\images\\9ba24c1e-2c48-4b2a-aa6e-b943893cd9ca_Screenshot 2024-01-05 093823.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\9bf17ea2-931e-4c45-93a7-e374ba9694a9_Screenshot 2024-01-05 093823.png",
+      "PackagePath": "staticwebassets\\images\\9bf17ea2-931e-4c45-93a7-e374ba9694a9_Screenshot 2024-01-05 093823.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\9d50d805-fefb-4873-95bd-650d2abfecd0_Screenshot (2).png",
+      "PackagePath": "staticwebassets\\images\\9d50d805-fefb-4873-95bd-650d2abfecd0_Screenshot (2).png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\NoImage.jpg",
+      "PackagePath": "staticwebassets\\images\\NoImage.jpg"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\a04b567c-08ce-4c48-8686-0d561e8df6b2_1.png",
+      "PackagePath": "staticwebassets\\images\\a04b567c-08ce-4c48-8686-0d561e8df6b2_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\a8ccaf25-4e14-47a8-888e-0ce6b2f27cba_1.png",
+      "PackagePath": "staticwebassets\\images\\a8ccaf25-4e14-47a8-888e-0ce6b2f27cba_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\aba9ce9e-117a-4a43-ac79-bd6a487de71b_1.png",
+      "PackagePath": "staticwebassets\\images\\aba9ce9e-117a-4a43-ac79-bd6a487de71b_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\abb53fe1-cc6f-446d-bb9d-2f1423d84351_Screenshot 2024-01-05 093854.png",
+      "PackagePath": "staticwebassets\\images\\abb53fe1-cc6f-446d-bb9d-2f1423d84351_Screenshot 2024-01-05 093854.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\ac87d841-612d-43a4-9d73-423f5953b602_1.png",
+      "PackagePath": "staticwebassets\\images\\ac87d841-612d-43a4-9d73-423f5953b602_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\afca8478-a02a-4498-be9b-3af5ce4afdad_3.png",
+      "PackagePath": "staticwebassets\\images\\afca8478-a02a-4498-be9b-3af5ce4afdad_3.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\b050d553-5577-42ed-b9e4-25cc4aa3ece3_1.png",
+      "PackagePath": "staticwebassets\\images\\b050d553-5577-42ed-b9e4-25cc4aa3ece3_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\b0bdafd3-2d05-4897-8b74-b62143cd893a_1.png",
+      "PackagePath": "staticwebassets\\images\\b0bdafd3-2d05-4897-8b74-b62143cd893a_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\b43f54dd-d458-4a84-abc0-20368704569a_Screenshot 2024-01-03 033101.png",
+      "PackagePath": "staticwebassets\\images\\b43f54dd-d458-4a84-abc0-20368704569a_Screenshot 2024-01-03 033101.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\b53414c9-f63c-4547-889f-c7b9c034acfe_1.png",
+      "PackagePath": "staticwebassets\\images\\b53414c9-f63c-4547-889f-c7b9c034acfe_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\b54f7aac-13a6-43b9-8cce-2980ad136482_Screenshot 2024-01-05 093823.png",
+      "PackagePath": "staticwebassets\\images\\b54f7aac-13a6-43b9-8cce-2980ad136482_Screenshot 2024-01-05 093823.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\b68d76b4-f351-4fd5-ac56-950226d7f16d_1.png",
+      "PackagePath": "staticwebassets\\images\\b68d76b4-f351-4fd5-ac56-950226d7f16d_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\b710ff5c-6407-4b4e-a683-61afa11afe06_1.png",
+      "PackagePath": "staticwebassets\\images\\b710ff5c-6407-4b4e-a683-61afa11afe06_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\b844bb44-fba7-4800-b6e5-08b12aede69c_1.png",
+      "PackagePath": "staticwebassets\\images\\b844bb44-fba7-4800-b6e5-08b12aede69c_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\b8480893-a299-4b63-9933-c077ab1f92aa_Screenshot (3).png",
+      "PackagePath": "staticwebassets\\images\\b8480893-a299-4b63-9933-c077ab1f92aa_Screenshot (3).png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\b9c060f8-d1d7-4b8c-ab8a-989b50a9c409_Screenshot 2024-01-05 093854.png",
+      "PackagePath": "staticwebassets\\images\\b9c060f8-d1d7-4b8c-ab8a-989b50a9c409_Screenshot 2024-01-05 093854.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\bd0ed613-fca2-4a33-8300-76465eff6df9_Screenshot 2024-01-05 093823.png",
+      "PackagePath": "staticwebassets\\images\\bd0ed613-fca2-4a33-8300-76465eff6df9_Screenshot 2024-01-05 093823.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\bd11ad59-b4c8-4a91-bf7d-4fe83b0a84bb_1.png",
+      "PackagePath": "staticwebassets\\images\\bd11ad59-b4c8-4a91-bf7d-4fe83b0a84bb_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\c309ac2c-8ec8-4d96-ad4b-1309dcb67769_Screenshot 2024-01-05 093823.png",
+      "PackagePath": "staticwebassets\\images\\c309ac2c-8ec8-4d96-ad4b-1309dcb67769_Screenshot 2024-01-05 093823.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\c4c01a63-e13d-4a80-b099-f05380980807_Screenshot 2024-01-05 093854.png",
+      "PackagePath": "staticwebassets\\images\\c4c01a63-e13d-4a80-b099-f05380980807_Screenshot 2024-01-05 093854.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\c4c7a1c3-d55e-49f2-b763-18be2619cb25_4.jpg",
+      "PackagePath": "staticwebassets\\images\\c4c7a1c3-d55e-49f2-b763-18be2619cb25_4.jpg"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\c61d3457-7dae-42a1-8525-28a002e22eab_1.png",
+      "PackagePath": "staticwebassets\\images\\c61d3457-7dae-42a1-8525-28a002e22eab_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\c7e45c80-f964-4ab6-b0ee-bb6025cbff8d_3.png",
+      "PackagePath": "staticwebassets\\images\\c7e45c80-f964-4ab6-b0ee-bb6025cbff8d_3.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\c941f7ec-a042-402f-9825-eb84150216ee_1.png",
+      "PackagePath": "staticwebassets\\images\\c941f7ec-a042-402f-9825-eb84150216ee_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\c996292f-1635-449a-8ddb-79599e59cc52_1.png",
+      "PackagePath": "staticwebassets\\images\\c996292f-1635-449a-8ddb-79599e59cc52_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\cbb7dedb-b5cb-4fda-8cab-6b95922f2880_Screenshot 2023-12-31 152338.png",
+      "PackagePath": "staticwebassets\\images\\cbb7dedb-b5cb-4fda-8cab-6b95922f2880_Screenshot 2023-12-31 152338.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\cc0e24f6-94a2-48b6-9688-f6a1b3ddeb38_1.png",
+      "PackagePath": "staticwebassets\\images\\cc0e24f6-94a2-48b6-9688-f6a1b3ddeb38_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\ccdbbc7b-8e01-480a-a633-a816bd5ffed0_4.jpg",
+      "PackagePath": "staticwebassets\\images\\ccdbbc7b-8e01-480a-a633-a816bd5ffed0_4.jpg"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\d2d600f3-e9bd-4520-b276-edf57edb1b3f_Screenshot 2024-01-04 001751.png",
+      "PackagePath": "staticwebassets\\images\\d2d600f3-e9bd-4520-b276-edf57edb1b3f_Screenshot 2024-01-04 001751.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\d4733a5e-dbf1-4d96-8fd4-17c3f1c6ec30_1.png",
+      "PackagePath": "staticwebassets\\images\\d4733a5e-dbf1-4d96-8fd4-17c3f1c6ec30_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\d89c182a-482d-453e-b64a-0b833c6e28ec_1.png",
+      "PackagePath": "staticwebassets\\images\\d89c182a-482d-453e-b64a-0b833c6e28ec_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\da1a5eac-b88d-4109-a338-e93413db1b41_Screenshot 2024-01-04 001751.png",
+      "PackagePath": "staticwebassets\\images\\da1a5eac-b88d-4109-a338-e93413db1b41_Screenshot 2024-01-04 001751.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\da5a6850-7634-4cb2-bb75-6977e7abf085_Screenshot 2024-01-05 093854.png",
+      "PackagePath": "staticwebassets\\images\\da5a6850-7634-4cb2-bb75-6977e7abf085_Screenshot 2024-01-05 093854.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\db928496-9461-4811-8e5a-9d67f293f6cd_1.png",
+      "PackagePath": "staticwebassets\\images\\db928496-9461-4811-8e5a-9d67f293f6cd_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\e03ac555-d18f-4ca7-88a6-13edebd43b69_1.png",
+      "PackagePath": "staticwebassets\\images\\e03ac555-d18f-4ca7-88a6-13edebd43b69_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\e221c0b5-bf98-417c-a607-de6f407f4b79_3.png",
+      "PackagePath": "staticwebassets\\images\\e221c0b5-bf98-417c-a607-de6f407f4b79_3.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\e2bf37f6-7944-4d44-96eb-a66342d5f64c_1.png",
+      "PackagePath": "staticwebassets\\images\\e2bf37f6-7944-4d44-96eb-a66342d5f64c_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\e4007178-d3ac-452c-bd0b-a21e40ed09c6_1.png",
+      "PackagePath": "staticwebassets\\images\\e4007178-d3ac-452c-bd0b-a21e40ed09c6_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\e683a3a5-ab8e-4f75-af77-03a7fe2c44dc_Screenshot 2024-01-05 093823.png",
+      "PackagePath": "staticwebassets\\images\\e683a3a5-ab8e-4f75-af77-03a7fe2c44dc_Screenshot 2024-01-05 093823.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\e7eeb6bc-0252-4f7a-be69-1ae3f7d5d33d_1.png",
+      "PackagePath": "staticwebassets\\images\\e7eeb6bc-0252-4f7a-be69-1ae3f7d5d33d_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\e9a9af42-0269-4402-b0bb-9543eb818e38_Screenshot 2024-01-03 093702.png",
+      "PackagePath": "staticwebassets\\images\\e9a9af42-0269-4402-b0bb-9543eb818e38_Screenshot 2024-01-03 093702.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\f505b3e8-5024-42e0-9744-f30d9cf16d42_1.png",
+      "PackagePath": "staticwebassets\\images\\f505b3e8-5024-42e0-9744-f30d9cf16d42_1.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\f5683f87-7514-4edf-b8f9-d3a190607f1c_3.png",
+      "PackagePath": "staticwebassets\\images\\f5683f87-7514-4edf-b8f9-d3a190607f1c_3.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\images\\fd33ec40-5229-4191-bc80-8cdcfeb52469_Screenshot (3).png",
+      "PackagePath": "staticwebassets\\images\\fd33ec40-5229-4191-bc80-8cdcfeb52469_Screenshot (3).png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\img\\AddIcon.png",
+      "PackagePath": "staticwebassets\\img\\AddIcon.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\img\\IBSS.png",
+      "PackagePath": "staticwebassets\\img\\IBSS.png"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\img\\NoImage.jpg",
+      "PackagePath": "staticwebassets\\img\\NoImage.jpg"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\js\\DataTable_File.js",
+      "PackagePath": "staticwebassets\\js\\DataTable_File.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\js\\ErrorMessage.js",
+      "PackagePath": "staticwebassets\\js\\ErrorMessage.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\js\\all.js",
+      "PackagePath": "staticwebassets\\js\\all.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\js\\all.min.js",
+      "PackagePath": "staticwebassets\\js\\all.min.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\js\\brands.js",
+      "PackagePath": "staticwebassets\\js\\brands.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\js\\brands.min.js",
+      "PackagePath": "staticwebassets\\js\\brands.min.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\js\\conflict-detection.js",
+      "PackagePath": "staticwebassets\\js\\conflict-detection.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\js\\conflict-detection.min.js",
+      "PackagePath": "staticwebassets\\js\\conflict-detection.min.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\js\\fontawesome.js",
+      "PackagePath": "staticwebassets\\js\\fontawesome.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\js\\fontawesome.min.js",
+      "PackagePath": "staticwebassets\\js\\fontawesome.min.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\js\\regular.js",
+      "PackagePath": "staticwebassets\\js\\regular.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\js\\regular.min.js",
+      "PackagePath": "staticwebassets\\js\\regular.min.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\js\\solid.js",
+      "PackagePath": "staticwebassets\\js\\solid.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\js\\solid.min.js",
+      "PackagePath": "staticwebassets\\js\\solid.min.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\js\\v4-shims.js",
+      "PackagePath": "staticwebassets\\js\\v4-shims.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\js\\v4-shims.min.js",
+      "PackagePath": "staticwebassets\\js\\v4-shims.min.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AdvLab_WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.AdvLab_WebApp.props",
+      "PackagePath": "build\\AdvLab_WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AdvLab_WebApp.props",
+      "PackagePath": "buildMultiTargeting\\AdvLab_WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.AdvLab_WebApp.props",
+      "PackagePath": "buildTransitive\\AdvLab_WebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

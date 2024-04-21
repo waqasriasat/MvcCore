@@ -1,0 +1,372 @@
+﻿@model AdvLab_WebApp.Models.RecepViewModel
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<style>
+    .textcss{
+        width:40%; inline-size: max-content;
+    }
+
+    hr {
+        height: 0.1px !important;
+        border: none;
+        background-color: black;
+        margin: 0.25em 0;
+    }
+</style>
+<div class="ActionHeading">
+    <div class="card panalheading">
+
+        <h2>DETAIL ORDER</h2>
+
+    </div>
+    <div class="col-12 col-md-12 col-sm-12">
+        <form id="OrderDetailForm1" enctype="multipart/form-data" method="get" asp-action="Edit">
+            <input type="hidden" asp-for="DescCashier.LabNo" name="id" />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <p>
+                <a asp-action="Index">
+                    <i class="fa fa-arrow-left BtnIcon2 HomeIcon"></i>
+                </a>
+                <a href="#" id="submitButton">
+                    <i class="fa fa-edit BtnIcon1 HomeIcon"></i>
+                </a>
+            </p>
+            <div class="row" style="justify-content: center;">
+                <div class="col-4 col-md-3 col-sm-12">
+                    <div class="row" style="border: outset;">
+                        <div class="col-md-7" style="display:none">
+                          
+                            <div class="form-group">
+                                @* style="display:none"> *@
+                                <div class="form-group col-8 p-0">
+
+                                    <div class="custom-file">
+                                        <input asp-for="PatReg.ProfilePhoto" class="custom-file-input" id="customfile"
+                                               onchange="document.getElementById('PreviewPhoto').src=window.URL.createObjectURL(this.files[0])" />
+                                    </div>
+
+                                    <span asp-validation-for="PatReg.ProfilePhoto" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="col-md-12">
+                            <div class="form-group col-4">
+                                <img src="~/images/@Model.PatReg.PhotoUrl" id="PreviewPhoto" alt="Logo Image" class="avatar"
+                                     onerror="this.onerror=null; this.src='~/images/NoImage.jpg';
+                                     width="125" height="125" style="border:1px; margin-top:0px;border-radius: 50%;" />
+                                <input type="hidden" id="hdnLastIndex" value="0" />
+                                <img id="PreviewPhoto1" src="~/images/NoImage.jpg" alt="Logo Image"
+                                     width="125" height="125" style="border:1px; margin-top:0px;border-radius: 50%; display:none" />
+
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <hr />
+                        <h3 style="text-align:center">INVOICE</h3>
+                        <hr />
+                        <br />
+                        <div class="col-md-12" style="display: -webkit-inline-box;">
+                            <div style="width:40%">
+                                <label asp-for="PatReg.Initial">Name :</label>
+                            </div>
+                            <div class="textcss">
+                                <input id="Txt_Name" readonly class="PosPrintControl" type="text" value="" />
+                                <input asp-for="PatReg.Initial" id="Txt_PatRegInitial" class="PosPrintControl" hidden/>
+                                <input asp-for="PatReg.FirstName" id="Txt_PatRegFirstName" class="PosPrintControl" hidden />
+                            </div>
+                        </div>
+
+                        <div class="col-md-12" style="display: -webkit-inline-box;">
+                            <div style="width:40%">
+                                <label asp-for="PatReg.Age" class="control-label">Age :</label>
+                            </div>  
+                            <div class="textcss">
+                                <input id="Txt_Age" readonly class="PosPrintControl" type="text" value="" />
+                                <input asp-for="PatReg.Age" id="Txt_PatRegAge" class="PosPrintControl" hidden />
+                                <input asp-for="PatReg.AgeType" id="Txt_PatRegAgeType" class="PosPrintControl" hidden />
+                            </div>
+                        </div>
+
+                        <div class="col-md-12" style="display: -webkit-inline-box;">
+                            <div style="width:40%">
+                                <label asp-for="PatReg.Gender" class="control-label">Gender :</label>
+                            </div> 
+                            <div class="textcss">
+                                <input asp-for="PatReg.Gender" class="PosPrintControl" />
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="display: -webkit-inline-box;">
+                            <div style="width:40%">
+                                <label asp-for="PatReg.ContNo" class="control-label">Contact # :</label>
+                            </div> 
+                            <div class="textcss">
+                                <input asp-for="PatReg.ContNo" class="PosPrintControl" />
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="display: -webkit-inline-box;">
+                            <div style="width:40%">
+                                <label asp-for="DescCashier.ClientID" class="control-label">Client Name :</label>
+                            </div>  
+                            <div class="textcss">
+                                <input asp-for="DescCashier.ClientID" id="Txt_ClientID" hidden class="PosPrintControl" />
+                                <input id="Txt_PerA" name="Txt_PerA" hidden />
+                                <input type="text" id="Txt_ClientName" class="PosPrintControl" />
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="display: -webkit-inline-box;">
+                            <div style="width:40%">
+                                <label asp-for="DescCashier.ClientNo" class="control-label">Client # :</label>
+                            </div> 
+                            <div class="textcss">
+                                <input asp-for="DescCashier.ClientNo" class="PosPrintControl" />
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="display: -webkit-inline-box;">
+                            <div style="width:40%">
+                                <label asp-for="DescCashier.ConsName" class="control-label">Consultant :</label>
+                            </div> 
+                            <div class="textcss">
+                                <input asp-for="DescCashier.ConsName" class="PosPrintControl" />
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <hr />
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <h6>Description</h6>
+                                </div>
+                                <div class="col-md-3">
+                                    <h6>Price</h6>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row" id="DescLabTable">
+                                @for (int i = 0; i < Model.DescCashier.DescLabs.Count; i++)
+                                {
+                                    <div class="col-md-9">
+                                        <input asp-for="@Model.DescCashier.DescLabs[i].DescID" id="Txt_DescID-@i" hidden class="PosPrintControl" />
+                                        <input asp-for="@Model.DescCashier.DescLabs[i].DescID" id="Txt_DescName-@i" readonly class="PosPrintControl" type="text" value="" />
+                                        <input asp-for="@Model.DescCashier.DescLabs[i].DStatus" id="Txt_Status-@i" hidden class="PosPrintControl" type="text" value="Invoice" />
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input asp-for="@Model.DescCashier.DescLabs[i].Charges" id="Txt_Price-@i" readonly class="PosPrintControl" />
+                                    </div>
+                                }
+                                
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                        <div class="col-md-12" style="display: -webkit-inline-box;">
+                            <div style="width:60%">
+                                <label asp-for="DescCashier.GrossA" class="control-label">Gross Amount :</label>
+                            </div>
+                            <div class="textcss">
+                                <input asp-for="DescCashier.GrossA" class="PosPrintControl" readonly />
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="display: -webkit-inline-box;">
+                            <div style="width:60%">
+                                <label asp-for="DescCashier.DiscPer" class="control-label">Discount Percent :</label>
+                            </div>
+                            <div class="textcss">
+                                <input asp-for="DescCashier.DiscPer" class="PosPrintControl" />
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="display: -webkit-inline-box;">
+                            <div style="width:60%">
+                                <label asp-for="DescCashier.Discount" class="control-label">Discount Amount :</label>
+                            </div>
+                            <div class="textcss">
+                                <input asp-for="DescCashier.Discount" class="PosPrintControl" />
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="display: -webkit-inline-box;">
+                            <div style="width:60%">
+                                <label asp-for="DescCashier.TotalA" class="control-label">Net Amount :</label>
+                            </div>
+                            <div class="textcss">
+                                <input asp-for="DescCashier.TotalA" class="PosPrintControl" readonly />
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="display: -webkit-inline-box;">
+                            <div style="width:60%">
+                                <label asp-for="DescCashier.PaidA" class="control-label">Received Amount :</label>
+                            </div>
+                            <div class="textcss">
+                                <input asp-for="DescCashier.PaidA" class="PosPrintControl" />
+                            </div>
+                        </div>
+                        <div class="col-md-12" style="display: -webkit-inline-box;">
+                            <div style="width:60%">
+                                <label asp-for="DescCashier.BlanceA" class="control-label">Balance Amount : </label>
+                            </div>
+                            <div class="textcss">
+                                <input asp-for="DescCashier.BlanceA" class="PosPrintControl" readonly />
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+
+        </form>
+    </div>
+</div>
+<hr />
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation.unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+
+    <script>
+        document.getElementById("submitButton").addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the default behavior of the <a> tag
+            document.getElementById("OrderDetailForm1").submit(); // Submit the form
+        });
+        
+    </script>
+    <script type="text/javascript">
+        $(".custom-file-input").on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+    </script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        window.onload = function () {
+            var searchTerm = $('#Txt_ClientID').val();
+            if (searchTerm != 0 && searchTerm != null) { // Adjust the minimum length as needed
+                $.ajax({
+                    url: '/Reception/ClientIDzsearchingEvent',
+                    method: 'GET',
+                    data: { searchTerm: searchTerm },
+                    success: function (data) {
+
+                        console.log(data); // Log the received data to console for verification
+                        $('#clientList').empty();
+                        $.each(data, function (index, item) {
+                            console.log(item.clientID, item.clientName, item.location, item.perA, item.discountPerAllow, item.balancePerAllow); // Log each item to verify
+                            $('#clientList').append($('<option>', {
+                                value: item.clientID,
+                                text: item.clientName,
+                                location: item.location,
+                                perA: item.perA,
+                                discountPerAllow: item.discountPerAllow,
+                                balancePerAllow: item.balancePerAllow
+                            }));
+
+                            $('#Txt_ClientName').val(item.clientName);
+                            $('#Txt_PerA').val(item.perA);
+                            $('#DiscountAllow').val(item.discountPerAllow);
+                            $('#BalanceAllow').val(item.balancePerAllow);
+                        });
+                    },
+                    error: function (error) {
+                        console.error(error);
+                    }
+                });
+            }
+
+            var searchTermArr = [];
+            $('[id^="Txt_DescID-"]').each(function () {
+
+                searchTermArr.push($(this).val());
+                document.getElementById('hdnLastIndex').value = +1;
+            });
+
+            searchTermArr.forEach(function (searchTerm) {
+
+                if (searchTerm != 0 && searchTerm != null) {
+                    $.ajax({
+                        url: '/Reception/DescriptionIDzsearchingEvent',
+                        method: 'GET',
+                        data: { searchTerm: searchTerm },
+                        success: function (data) {
+                            $('#clientList').empty();
+                            $.each(data, function (index, item) {
+                                $('#clientList').append($('<option>', {
+                                    value: item.descID,
+                                    text: item.descName,
+                                }));
+                                var $parentTd = $('[id^="Txt_DescID-"][value="' + searchTerm + '"]').closest('.col-md-9');
+
+                                $parentTd.find('[id^="Txt_DescID-"]').val(item.descID);
+                                $parentTd.find('[id^="Txt_DescName-"]').val(item.descName);
+
+                                
+                            });
+                        },
+                        error: function (error) {
+                            console.error(error);
+                        }
+                    });
+                }
+            });
+
+            document.getElementById('Txt_Name').value = document.getElementById('Txt_PatRegInitial').value + '.' + document.getElementById('Txt_PatRegFirstName').value;
+            document.getElementById('Txt_Age').value = document.getElementById('Txt_PatRegAge').value + ' ' + document.getElementById('Txt_PatRegAgeType').value;
+
+
+            var table = document.getElementById('DescLabTable');
+            var rows = table.getElementsByTagName('tr');
+            var rowOuterHtml = rows[rows.length - 1].outerHTML;
+            var lastrowIdx = document.getElementById('hdnLastIndex').value;
+            var nextrowIdx = eval(lastrowIdx) + 1;
+            document.getElementById('hdnLastIndex').value = nextrowIdx;
+
+            //document.getElementById('hdnLastIndex').value = nextrowIdx;
+
+            rowOuterHtml = rowOuterHtml.replaceAll('' + lastrowIdx + '', '' + nextrowIdx + '');
+            rowOuterHtml = rowOuterHtml.replaceAll('[' + lastrowIdx + ']', '[' + nextrowIdx + ']');
+            rowOuterHtml = rowOuterHtml.replaceAll('-' + lastrowIdx, '-' + nextrowIdx);
+           
+            var btnAddID = "btnadd-" + nextrowIdx;
+            var btnDeleteid = "btnremove-" + nextrowIdx;
+            var delbtn = document.getElementById(btnDeleteid);
+            delbtn.classList.add("visible");
+            delbtn.classList.remove("invisible");
+            var addbtn = document.getElementById(btnAddID);
+            addbtn.classList.add("visible");
+            addbtn.classList.remove("invisible");
+
+            $('#Txt_DescID-' + nextrowIdx).val(0);
+            $('#Txt_Price-' + nextrowIdx).val(0);
+
+            $('#Txt_DescName-' + nextrowIdx).val('');
+            $('#Txt_DescName-' + (nextrowIdx - 1)).prop('readonly', true);
+            $('#Txt_DescName-' + (nextrowIdx)).prop('readonly', false);
+        };
+    </script>
+    <script>
+        function formatDate(input) {
+            let value = input.value;
+            let numericValue = value.replace(/\D/g, '');
+            let formattedValue = numericValue.replace(/^(\d{2})(\d{2})(\d{4})$/, '$1/$2/$3');
+            input.value = formattedValue;
+        }
+    </script>
+}

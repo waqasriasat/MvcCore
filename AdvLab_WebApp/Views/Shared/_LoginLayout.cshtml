@@ -1,0 +1,102 @@
+﻿@inject IHttpContextAccessor _httpContextAccessor
+@using Newtonsoft.Json
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AdvLab_WebApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/css/formgroud.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/AdvLab_WebApp.styles.css" asp-append-version="true" />
+    <link href="~/css/all.css" rel="stylesheet" />
+    <link href="~/css/all.min.css" rel="stylesheet" />
+    <link href="~/css/brands.css" rel="stylesheet" />
+    <link href="~/css/brands.min.css" rel="stylesheet" />
+    <link href="~/css/fontawesome.css" rel="stylesheet" />
+    <link href="~/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="~/css/regular.css" rel="stylesheet" />
+    <link href="~/css/regular.min.css" rel="stylesheet" />
+    <link href="~/css/solid.css" rel="stylesheet" />
+    <link href="~/css/solid.min.css" rel="stylesheet" />
+    <link href="~/css/svg-with-js.css" rel="stylesheet" />
+    <link href="~/css/svg-with-js.min.css" rel="stylesheet" />
+    <link href="~/css/v4-font-face.css" rel="stylesheet" />
+    <link href="~/css/v4-font-face.min.css" rel="stylesheet" />
+    <link href="~/css/v4-shims.css" rel="stylesheet" />
+    <link href="~/css/v4-shims.min.css" rel="stylesheet" />
+    <link href="~/css/v5-font-face.css" rel="stylesheet" />
+    <link href="~/css/v5-font-face.min.css" rel="stylesheet" />
+    <link href="~/css/custom.css" rel="stylesheet" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Login">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1" style="place-content: flex-end;">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark" href="#" id="navbarDropdown" role="button"  aria-expanded="false">
+                                CRM |
+                            </a>
+                           
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark" href="#" id="navbarDropdown" role="button"  aria-expanded="false">
+                                Patient Portal |
+                            </a>
+                          
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark" href="#" id="navbarDropdown" role="button"  aria-expanded="false">
+                                EMS
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted FooterFix">
+        <div class="container">
+            &copy; 2024 - AdvLab_WebApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/errormessage.js"></script>
+    <script src="~/js/all.js"></script>
+    <script src="~/js/all.min.js"></script>
+    <script src="~/js/brands.js"></script>
+    <script src="~/js/brands.min.js"></script>
+    @* <script src="~/js/conflict-detection.js"></script>
+    <script src="~/js/conflict-detection.min.js"></script> *@
+    <script src="~/js/fontawesome.js"></script>
+    <script src="~/js/fontawesome.min.js"></script>
+    <script src="~/js/regular.js"></script>
+    <script src="~/js/regular.min.js"></script>
+    <script src="~/js/solid.js"></script>
+    <script src="~/js/solid.min.js"></script>
+    <script src="~/js/v4-shims.js"></script>
+    <script src="~/js/v4-shims.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

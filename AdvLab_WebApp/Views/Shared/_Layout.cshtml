@@ -1,0 +1,409 @@
+﻿@inject IHttpContextAccessor _httpContextAccessor
+@using Newtonsoft.Json
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AdvLab_WebApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/css/formgroud.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/AdvLab_WebApp.styles.css" asp-append-version="true" />
+    <link href="~/css/all.css" rel="stylesheet" />
+    <link href="~/css/all.min.css" rel="stylesheet" />
+    <link href="~/css/brands.css" rel="stylesheet" />
+    <link href="~/css/brands.min.css" rel="stylesheet" />
+    <link href="~/css/fontawesome.css" rel="stylesheet" />
+    <link href="~/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="~/css/regular.css" rel="stylesheet" />
+    <link href="~/css/regular.min.css" rel="stylesheet" />
+    <link href="~/css/solid.css" rel="stylesheet" />
+    <link href="~/css/solid.min.css" rel="stylesheet" />
+    <link href="~/css/svg-with-js.css" rel="stylesheet" />
+    <link href="~/css/svg-with-js.min.css" rel="stylesheet" />
+    <link href="~/css/v4-font-face.css" rel="stylesheet" />
+    <link href="~/css/v4-font-face.min.css" rel="stylesheet" />
+    <link href="~/css/v4-shims.css" rel="stylesheet" />
+    <link href="~/css/v4-shims.min.css" rel="stylesheet" />
+    <link href="~/css/v5-font-face.css" rel="stylesheet" />
+    <link href="~/css/v5-font-face.min.css" rel="stylesheet" />
+    <link href="~/css/custom.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/2.0.3/css/dataTables.dataTables.css" rel="stylesheet" />
+</head>
+<body>
+    <ejs-scripts></ejs-scripts>
+    <div class="row LayoutHeader LayoutLeft">
+    <div class="col-6">
+        <img src="~/img/IBSS.png" id="LayoutLogo" width="125" height="40" />
+    </div>
+        <div class="col-6 LayoutRight">
+            @* <a class="navbar-brand btn btn-danger text-white" asp-area="" asp-controller="Home" asp-action="Logout" style="margin-left:auto">Logout</a> *@
+           
+            
+            <a style="margin-left:auto; color:navy">
+                <i class="fa-solid fa-message LayoutIcon"></i>
+            </a>
+            <a style="margin-left:auto; color:orange">
+                <i class="fa-solid fa-bell LayoutIcon"></i>
+            </a>
+            <div class="row SmallHide">
+                <div class="col-12">
+                    <span class="LayoutSpanDesc">Laboratory Information System</span>
+                </div>
+            </div>
+            <a asp-area="" asp-controller="Home" asp-action="Logout" style="margin-left:auto; color:darkred">
+                <i class="fa fa-power-off LayoutIcon"></i>
+            </a>
+    </div>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            
+            <div class="container-fluid LayoutDropdownFontStyle">
+                <a asp-area="" asp-controller="Home" asp-action="Dashboard" style="margin-left:auto; color:navy">
+                    <i class="fa fa-home HomeIcon HomeIconPosition" aria-hidden="true"></i>
+                </a>
+                @* <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Dashboard">Home</a> *@
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Administration
+                            </a>
+                            <div class="dropdown-menu LayoutDropdownFontStyle" aria-labelledby="navbarDropdown">
+                                @{
+                                    string accessRightDataJson = _httpContextAccessor.HttpContext.Session.GetString("AccessRightData");
+
+                                    if (!string.IsNullOrEmpty(accessRightDataJson))
+                                    {
+                                        List<AccessRight> accessRights = JsonConvert.DeserializeObject<List<AccessRight>>(accessRightDataJson);
+                                        List<int> allowedPageIds = Enumerable.Range(1, 5000).ToList();
+                                        List<AccessRight> filteredAccessRights = accessRights
+                                        .Where(ar => ar.SOR.HasValue && allowedPageIds.Contains(ar.SOR.Value))
+                                        .ToList();
+
+                                        foreach (var accessRight in filteredAccessRights)
+                                        {
+                                            @if (accessRight.SOR == 52)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Business Registration</a>
+                                            }
+                                            @if (accessRight.SOR == 0)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Franchise Business Registration</a>
+                                            }
+                                            @if (accessRight.SOR == 54)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Billing Management</a>
+                                            }
+                                            @if (accessRight.SOR == 93)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Franchise Management</a>
+                                            }
+                                            @if (accessRight.SOR == 59)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Invoice Cancellation</a>
+                                            }
+                                            @if (accessRight.SOR == 58)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Patient Refund</a>
+                                            }
+                                            @if (accessRight.SOR == 55)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Expenses</a>
+                                            }
+                                            @if (accessRight.SOR == 61)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Checkout List</a>
+                                            }
+                                            @if (accessRight.SOR == 0)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Change a CNL</a>
+                                            }
+                                            @if (accessRight.SOR == 62)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Finance Summary</a>
+                                            }
+                                            @if (accessRight.SOR == 60)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Company Login</a>
+                                            }
+                                            @if (accessRight.SOR == 56)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Admin LOV</a>
+                                            }
+                                        }
+                                    }
+                                }
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Order Booking
+                            </a>
+                            <div class="dropdown-menu LayoutDropdownFontStyle" aria-labelledby="navbarDropdown">
+                                @{
+                        
+                                    if (!string.IsNullOrEmpty(accessRightDataJson))
+                                    {
+                                        List<AccessRight> accessRights = JsonConvert.DeserializeObject<List<AccessRight>>(accessRightDataJson);
+                                        List<int> allowedPageIds = Enumerable.Range(1, 5000).ToList();
+                                        List<AccessRight> filteredAccessRights = accessRights
+                                        .Where(ar => ar.SOR.HasValue && allowedPageIds.Contains(ar.SOR.Value))
+                                        .ToList();
+                                        foreach (var accessRight in filteredAccessRights)
+                                        {
+                                            @if (accessRight.SOR == 0)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Medical Registration</a>
+                                            }
+                                            @if (accessRight.SOR == 201)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="Reception" asp-action="Index">Reception</a>
+                                            }
+                                            @if (accessRight.SOR == 0)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Find Order</a>
+                                            }
+                                            @if (accessRight.SOR == 203)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="Reporting" asp-action="Index">Reporting</a>
+                                            }
+                                            @if (accessRight.SOR == 0)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Balance Received</a>
+                                            }
+                                            @if (accessRight.SOR == 204)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Summary Status</a>
+                                            }
+                                            @if (accessRight.SOR == 205)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Rate Slip</a>
+                                            }
+                                            @if (accessRight.SOR == 213)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Make Client PDF</a>
+                                            }
+                                            @if (accessRight.SOR == 225)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Flight Detail</a>
+                                            }
+                                            @if (accessRight.SOR == 226)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Order Cash System</a>
+                                            }
+                                            @if (accessRight.SOR == 227)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Change a Client Detail</a>
+                                            }
+                                        }
+                                    }
+                                }
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Pathology
+                            </a>
+                            <div class="dropdown-menu LayoutDropdownFontStyle" aria-labelledby="navbarDropdown">
+                                @{
+                                    if (!string.IsNullOrEmpty(accessRightDataJson))
+                                    {
+                                        List<AccessRight> accessRights = JsonConvert.DeserializeObject<List<AccessRight>>(accessRightDataJson);
+                                        List<int> allowedPageIds = Enumerable.Range(1, 5000).ToList();
+                                        List<AccessRight> filteredAccessRights = accessRights
+                                        .Where(ar => ar.SOR.HasValue && allowedPageIds.Contains(ar.SOR.Value))
+                                        .ToList();
+                                        foreach (var accessRight in filteredAccessRights)
+                                        {
+                                            @if (accessRight.SOR == 370)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Change Status</a>
+                                            }
+                                            @if (accessRight.SOR == 353)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Batch Generate</a>
+                                            }
+                                            @if (accessRight.SOR == 354)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Batch Received</a>
+                                            }
+                                            @if (accessRight.SOR == 351)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Phlebotomy Acknowledge</a>
+                                            }
+                                            @if (accessRight.SOR == 352)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Section Acknowledge</a>
+                                            }
+                                            @if (accessRight.SOR == 376)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Resource Tracking</a>
+                                            }
+                                            @if (accessRight.SOR == 359)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">To Follow</a>
+                                            }
+                                            @if (accessRight.SOR == 356)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">CBC Reporting</a>
+                                            }
+                                            @if (accessRight.SOR == 355)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Pathology Reporting</a>
+                                            }
+                                            @if (accessRight.SOR == 355)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Culture Reporting</a>
+                                            }
+                                            @if (accessRight.SOR == 356)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Serological Reporting</a>
+                                            }
+                                            @if (accessRight.SOR == 357)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Molecular Reporting</a>
+                                            }
+                                            @if (accessRight.SOR == 355)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Histopathology Reporting</a>
+                                            }
+                                            @if (accessRight.SOR == 372)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Average Report</a>
+                                            }
+                                            @if (accessRight.SOR == 0)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Medical Certificate</a>
+                                            }
+                                        }
+                                    }
+                                }
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Radiology
+                            </a>
+                            <div class="dropdown-menu LayoutDropdownFontStyle" aria-labelledby="navbarDropdown">
+                                @{
+                                    if (!string.IsNullOrEmpty(accessRightDataJson))
+                                    {
+                                        List<AccessRight> accessRights = JsonConvert.DeserializeObject<List<AccessRight>>(accessRightDataJson);
+                                        List<int> allowedPageIds = Enumerable.Range(1, 5000).ToList();
+                                        List<AccessRight> filteredAccessRights = accessRights
+                                        .Where(ar => ar.SOR.HasValue && allowedPageIds.Contains(ar.SOR.Value))
+                                        .ToList();
+                                        foreach (var accessRight in filteredAccessRights)
+                                        {
+                                            @if (accessRight.SOR == 402)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">X-Ray Reporting</a>
+                                            }
+                                            @if (accessRight.SOR == 402)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Ultrasound Reporting</a>
+                                            }
+                                            @if (accessRight.SOR == 403)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Average Report</a>
+                                            }
+                                        }
+                                    }
+                                }
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Users
+                            </a>
+                            <div class="dropdown-menu LayoutDropdownFontStyle" aria-labelledby="navbarDropdown">
+                                @{
+                                    if (!string.IsNullOrEmpty(accessRightDataJson))
+                                    {
+                                        List<AccessRight> accessRights = JsonConvert.DeserializeObject<List<AccessRight>>(accessRightDataJson);
+                                        List<int> allowedPageIds = Enumerable.Range(1, 5000).ToList();
+                                        List<AccessRight> filteredAccessRights = accessRights
+                                        .Where(ar => ar.SOR.HasValue && allowedPageIds.Contains(ar.SOR.Value))
+                                        .ToList();
+                                        foreach (var accessRight in filteredAccessRights)
+                                        {
+                                            @if (accessRight.SOR == 451)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="Users" asp-action="Index">Users Registration</a>
+                                            }
+                                            @if (accessRight.SOR == 453)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="Users" asp-action="ChangePassword">Change Password</a>
+                                            }
+                                            @if (accessRight.SOR == 454)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="Users" asp-action="ChangeLocation">Change Location</a>
+                                            }
+                                            @if (accessRight.SOR == 501)
+                                            {
+                                                <a class="dropdown-item" asp-area="" asp-controller="YourController" asp-action="YourAction">Attendance Record</a>
+                                            }
+                                        }
+                                    }
+                                }
+                            </div>
+                        </li>
+                        
+                        @*  <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Users</a>
+                        </li> *@
+                    </ul>
+                    
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+    <div class="LayoutBody">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted FooterFix">
+        <div class="container">
+            &copy; 2024 - AdvLab_WebApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.0.3/js/dataTables.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/errormessage.js"></script>
+    <script src="~/js/all.js"></script>
+    <script src="~/js/all.min.js"></script>
+    <script src="~/js/brands.js"></script>
+    <script src="~/js/brands.min.js"></script>
+    @* <script src="~/js/conflict-detection.js"></script>
+    <script src="~/js/conflict-detection.min.js"></script> *@
+    <script src="~/js/fontawesome.js"></script>
+    <script src="~/js/fontawesome.min.js"></script>
+    <script src="~/js/regular.js"></script>
+    <script src="~/js/regular.min.js"></script>
+    <script src="~/js/solid.js"></script>
+    <script src="~/js/solid.min.js"></script>
+    <script src="~/js/v4-shims.js"></script>
+    <script src="~/js/v4-shims.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

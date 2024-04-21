@@ -1,0 +1,55 @@
+﻿@model AdvLab_WebApp.Models.Users.ChangeLocation
+
+@{
+    ViewData["Title"] = "Change Location";
+}
+
+<h1>Change Location</h1>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.ErrorMessage
+    </div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+
+    {
+        <div class="alert alert-danger alert-dismissible fade show">
+            <strong>Error! </strong> @TempData["ErrorMessage"]
+            <button type="button" class="close" data-slide-to="alert">
+                <span>&times;</span>
+            </button>
+        </div>
+    }
+}
+@if (TempData["SuccessMessage"] != null)
+{
+
+    {
+        <div class="alert alert-success alert-dismissible fade show">
+            <strong>Success </strong> @TempData["SuccessMessage"]
+            <button type="button" class="close" data-slide-to="alert">
+                <span>&times;</span>
+            </button>
+        </div>
+    }
+}
+<form asp-action="ChangeLocation" method="post">
+    <div class="form-group">
+        <label asp-for="Location">Location</label>
+        <select asp-for="Location" asp-items="@(new SelectList(ViewBag.LocationList, "Value", "Text", Model.Location))" class="form-control">
+        </select>
+        @* <input asp-for="Location" class="form-control" /> *@
+        <span asp-validation-for="Location" class="text-danger"></span>
+    </div>
+   
+    <div class="col-12 col-md-12 col-lg-12">
+        <br />
+        <br />
+        <div class="btn-group" role="group" aria-label="Actions">
+            <button type="submit" class="btn btn-primary">Change Location</button>
+        </div>
+    </div>
+</form>

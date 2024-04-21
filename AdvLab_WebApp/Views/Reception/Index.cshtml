@@ -1,0 +1,126 @@
+﻿@model IEnumerable<AdvLab_WebApp.Models.PatRegViewModel>
+
+@{
+    ViewData["Title"] = "Reception";
+}
+<style>
+    .avatar {
+        vertical-align: middle;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+</style>
+<div class="ActionHeading">
+    <div class="card panalheading">
+        <h2>ORDER BOOKED LIST</h2>
+    </div>
+    <p>
+        <a asp-action="Create">
+            <i class="fa fa-add BtnIcon1 HomeIcon"></i>
+        </a>
+    </p>
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12 mb-12 SmallHide GVHeader">
+        <div class="row ">
+            <div class="col-10 col-md-10 col-lg-9">
+                <div class="row">
+                    <div class="col-1">
+                        <p class="card-text">Picture</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="card-text">RegDate</p>
+                    </div>
+                    <div class="col-3">
+                        <p class="card-text">Patient Name</p>
+                    </div>
+                    <div class="col-1">
+                        <p class="card-text">Age</p>
+                    </div>
+                    <div class="col-1">
+                        <p class="card-text">Type</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="card-text">Gender</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="card-text">Contact</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 col-md-2 col-lg-3">
+            </div>
+        </div>
+    </div>
+    @foreach (var item in Model)
+    {
+        <div class="col-12 col-md-12 col-lg-12 GVDetail">
+            <div class="row">
+                <div class="col-8 col-md-10 col-lg-9">
+                    <div class="row ">
+                        <div class="col-12 col-md-6 col-lg-1">
+                            <img src="~/images/@item.PatReg.PhotoUrl" alt="" class="avatar" />
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2">
+                            <p class="card-text"><span class="smallAdd">RegDate : </span>@Html.DisplayFor(modelItem => item.PatReg.RegDate)</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <p class="card-text"><span class="smallAdd">Name : </span>@Html.DisplayFor(modelItem => item.PatReg.FirstName)</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-1">
+                            <p class="card-text"><span class="smallAdd">Age : </span>@Html.DisplayFor(modelItem => item.PatReg.Age)</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-1">
+                            <p class="card-text"><span class="smallAdd">Type : </span>@Html.DisplayFor(modelItem => item.PatReg.AgeType)</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2">
+                            <p class="card-text"><span class="smallAdd">Gender : </span>@Html.DisplayFor(modelItem => item.PatReg.Gender)</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2">
+                            <p class="card-text"><span class="smallAdd">Contact : </span>@Html.DisplayFor(modelItem => item.PatReg.ContNo)</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-4 col-md-2 col-lg-3">
+                    <div class="row ">
+                        <div class="col-12 col-md-12 col-lg-4" style="padding-bottom: 5px;">
+                            <div class="btn-group" role="group" aria-label="Actions">
+                                <a asp-action="Edit" asp-route-id="@item.DescCashier.LabNo" class="btn btn-info" style="width:75px">Edit</a>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="col-12 col-md-12 col-lg-4" style="padding-bottom: 5px;">
+                            <div class="btn-group" role="group" aria-label="Actions">
+                                <a asp-action="Details" asp-route-id="@item.DescCashier.LabNo" class="btn btn-primary" style="width:75px">Detail</a>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="col-12 col-md-12 col-lg-4" style="padding-bottom: 5px;">
+                            <div class="btn-group" role="group" aria-label="Actions">
+                                <a asp-action="Delete" asp-route-id="@item.DescCashier.LabNo" class="btn btn-danger" style="width:75px">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script type="text/javascript">
+        $(".custom-file-input").on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+
+
+
+    </script>
+}

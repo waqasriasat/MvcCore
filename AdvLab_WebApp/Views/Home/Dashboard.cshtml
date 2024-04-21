@@ -1,0 +1,203 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+@{
+    var userName = Context.Session.GetString("UserName");
+    var UserID = Context.Session.GetInt32("UserID");
+    var Department = Context.Session.GetString("UserDepart");
+    var Designation = Context.Session.GetString("UserDesignation");
+    var Location = Context.Session.GetString("UserLocation");
+}
+
+<div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-12" style="padding: 0px 10px 1px 10px">
+        <div class="small-box bg-info text-white">
+            <div class="inner">
+                <strong>User Name (ID)</strong>
+                <h4>
+                    @userName (@UserID)
+                </h4>
+            </div>
+            <div class="icon">
+                <i class="ion ion-person-add"></i>
+            </div>
+            <a href="#" class="small-box-footer"><i class="fa fa-arrow-circle-o-right"></i></a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12" style="padding: 0px 10px 1px 10px">
+        <div class="small-box bg-success text-white">
+            <div class="inner">
+                <strong>Department</strong>
+                <h4>
+                    @Department
+                </h4>
+            </div>
+            <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+            </div>
+            <a href="#" class="small-box-footer"><i class="fa fa-arrow-circle-o-right"></i></a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12" style="padding: 0px 10px 1px 10px">
+        <div class="small-box bg-warning">
+            <div class="inner">
+                <strong>Designation</strong>
+                <h4>
+                    @Designation
+                </h4>
+            </div>
+            <div class="icon">
+                <i class="ion ion-bag"></i>
+            </div>
+            <a href="#" class="small-box-footer"><i class="fa fa-arrow-circle-o-right"></i></a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12" style="padding: 0px 10px 1px 10px">
+        <div class="small-box bg-danger text-white">
+            <div class="inner">
+                <strong>Location</strong>
+                <h4>
+                    @Location
+                </h4>
+            </div>
+            <div class="icon">
+                <i class="ion ion-pie-graph"></i>
+            </div>
+            <a href="#" class="small-box-footer"><i class="fa fa-arrow-circle-o-right"></i></a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-md-6 col-lg-3" style="padding: 0px 10px 1px 10px">
+        <!-- Business Financial Staus -->
+        <div class="card shadow mb-4">
+            <div class="card-body py-3" style="background-color: ghostwhite">
+                <h6 class="m-0 font-weight-bold text-primary" style="font-family: inherit; font-size: 0.8rem; text-transform: uppercase;">Paid Amount</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart-bar">
+                    <canvas id="ForReceptionistPaidChart"></canvas>
+                </div>
+                <hr>
+                Paid Transaction Analysis
+                <code>Checkout Last 7 Days</code>.
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3" style="padding: 0px 10px 1px 10px">
+        <!-- Business Financial Staus -->
+        <div class="card shadow mb-4">
+            <div class="card-body py-3" style="background-color: ghostwhite">
+                <h6 class="m-0 font-weight-bold text-primary" style="font-family: inherit; font-size: 0.8rem; text-transform: uppercase;">Balance Received Amount</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart-bar">
+                    <canvas id="ForReceptionistBalanceReceivedChart"></canvas>
+                </div>
+                <hr>
+                Balance Received Analysis
+                <code>Checkout Last 7 Days</code>.
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3" style="padding: 0px 10px 1px 10px">
+        <!-- Business Financial Staus -->
+        <div class="card shadow mb-4">
+            <div class="card-body py-3" style="background-color: ghostwhite">
+                <h6 class="m-0 font-weight-bold text-primary" style="font-family: inherit; font-size: 0.8rem; text-transform: uppercase;">Expense / Refund Amount</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart-bar">
+                    <canvas id="ReceptionistExpenseChart"></canvas>
+                </div>
+                <hr>
+                Expense / Refund Analysis
+                <code>Checkout Last 7 Days</code>.
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3" style="padding: 0px 10px 1px 10px">
+        <!-- Business Financial Staus -->
+        <div class="card shadow mb-4">
+            <div class="card-body py-3" style="background-color: ghostwhite">
+                <h6 class="m-0 font-weight-bold text-primary" style="font-family: inherit; font-size: 0.8rem; text-transform: uppercase;">Sample Transaction</h6>
+            </div>
+            <div class="card-body">
+                <div class="chart-bar">
+                    <canvas id="ForAllListSampleTransactionChart"></canvas>
+                </div>
+                <hr>
+                Sample Transaction Analysis
+                <code>Work Load Today</code>.
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12" style="padding: 0px 10px 1px 10px">
+        <div class="shadow mb-4">
+            <div class="small-box bg-white">
+                <div class="inner Card1div" style="padding-top:26px; padding-right: 30px;">
+                    <strong class="CardFontColor">TODAY REPORT PRINT</strong>
+                    <h4 class="CardFontColor">
+                       0
+                    </h4>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-print Card1I" aria-hidden="true"></i>
+
+                </div>
+                <a href="#" class="small-box-footer Card1A"><i></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12" style="padding: 0px 10px 1px 10px">
+        <div class="shadow mb-4">
+            <div class="small-box bg-white">
+                <div class="inner Card2div" style="padding-top:26px; padding-right: 30px;">
+                    <strong class="CardFontColor">TODAY REPORT PDF</strong>
+                    <h4 class="CardFontColor">
+                       0
+                    </h4>
+                </div>
+                <div class="icon">
+                    <i class="fa fa fa-file Card2I" aria-hidden="true"></i>
+                </div>
+                <a href="#" class="small-box-footer Card2A"><i></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12" style="padding: 0px 10px 1px 10px">
+        <div class="shadow mb-4">
+            <div class="small-box bg-white">
+                <div class="inner Card3div" style="padding-top:26px; padding-right: 30px;">
+                    <strong class="CardFontColor">TODAY PATIENTS</strong>
+                    <h4 class="CardFontColor">
+                       0
+                    </h4>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-book Card3I" aria-hidden="true"></i>
+                </div>
+                <a href="#" class="small-box-footer Card3A"><i></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12" style="padding: 0px 10px 1px 10px">
+        <div class="shadow mb-4">
+            <div class="small-box bg-white">
+                <div class="inner Card4div" style="padding-top:26px; padding-right: 30px;">
+                    <strong class="CardFontColor">TODAY DESCRIPTIONS</strong>
+                    <h4 class="CardFontColor">
+                       0
+                    </h4>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-tasks Card4I" aria-hidden="true"></i>
+                </div>
+                <a href="#" class="small-box-footer Card4A"><i></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+

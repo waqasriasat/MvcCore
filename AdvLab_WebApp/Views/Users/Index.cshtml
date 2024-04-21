@@ -1,0 +1,166 @@
+﻿@model IEnumerable<AdvLab_WebApp.Models.User>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="ActionHeading">
+    <div class="card panalheading">
+        <h2>USER LIST</h2>
+    </div>
+    <p>
+        <a asp-action="Create">
+            <i class="fa fa-add BtnIcon1 HomeIcon"></i>
+        </a>
+    </p>
+
+    <div class="row">
+     
+        <div class="col-lg-12 col-md-12 col-sm-12 mb-12">
+                    <div class="row ">
+                        <div class="col-12 col-md-8 col-lg-8">
+                            <div class="row " style="align-items: center;padding: 25px 0px 25px 30px;">
+                                <div class="col-12 col-md-2 col-lg-2">
+                                    <label id="lblsearchuser" class="font-monospace">Seach User</label>
+                                </div>
+                                <div class="col-12 col-md-5 col-lg-5">
+                                    <input type="hidden" id="Txt_UserID" name="Txt_UserID" />
+                                    <input type="text" id="Txt_UserName" class="form-control" />
+                                </div>
+                                <div class="col-12 col-md-1 col-lg-1">
+                                    <div class="btn-group" role="group" aria-label="Actions">
+                                        <a id="searchUserLink" class="btn btn-warning" style="width:75px">Search</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 mb-12 SmallHide GVHeader">
+                    <div class="row ">
+                        <div class="col-10 col-md-10 col-lg-9">
+                            <div class="row">
+                                <div class="col-2">
+                                    <p class="card-text">User ID</p>
+                                </div>
+                                <div class="col-3">
+                                    <p class="card-text">User Name</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="card-text">Location</p>
+                                </div>
+                                <div class="col-2">
+                                    <p class="card-text">Status</p>
+                                </div>
+                                <div class="col-3">
+                                    <p class="card-text">Department</p>
+                                </div>
+                                <div class="col-3">
+                                    <p class="card-text" style="display:none">Role Name</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 col-md-2 col-lg-3">
+                        </div>
+                    </div>
+        </div>
+        @foreach (var item in Model)
+        {
+            <div class="col-12 col-md-12 col-lg-12 GVDetail">
+                        <div class="row ">
+                            <div class="col-8 col-md-10 col-lg-9">
+                                <div class="row ">
+                                    <div class="col-12 col-md-6 col-lg-2">
+                                        <p class="card-text"><span class="smallAdd">User ID : </span>@Html.DisplayFor(modelItem => item.EmpId)</p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <p class="card-text"><span class="smallAdd">User Name : </span>@Html.DisplayFor(modelItem => item.Uname)</p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-2">
+                                        <p class="card-text"><span class="smallAdd">Location : </span>@Html.DisplayFor(modelItem => item.Location)</p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-2">
+                                        <p class="card-text"><span class="smallAdd">Status : </span>@Html.DisplayFor(modelItem => item.Status)</p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <p class="card-text"><span class="smallAdd">Department : </span>@Html.DisplayFor(modelItem => item.Depart)</p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3" style="display:none">
+                                        <p class="card-text"><span class="smallAdd">Role ID : </span>@Html.DisplayFor(modelItem => item.RoleId)</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-4 col-md-2 col-lg-3">
+                                <div class="row ">
+                                    <div class="col-12 col-md-12 col-lg-4" style="padding-bottom: 5px;">
+                                        <div class="btn-group" role="group" aria-label="Actions">
+                                            <a asp-action="Edit" asp-route-id="@item.EmpId" class="btn btn-primary" style="width:75px">Edit</a>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="col-12 col-md-12 col-lg-4" style="padding-bottom: 5px;">
+                                        <div class="btn-group" role="group" aria-label="Actions">
+                                            <a asp-action="Details" asp-route-id="@item.EmpId" class="btn btn-warning" style="width:75px">Details</a>
+                                        </div>
+                                    </div>
+                                    <br />
+                                    <div class="col-12 col-md-12 col-lg-4" style="padding-bottom: 5px;">
+                                        <div class="btn-group" role="group" aria-label="Actions">
+                                            <a asp-action="Delete" asp-route-id="@item.EmpId" class="btn btn-danger" style="width:75px">Delete</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        }
+    </div>
+
+</div>
+
+@section Scripts {
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $('#Txt_UserName').autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: '/Users/usersearchingEvent',
+                        method: 'GET',
+                        data: { searchTerm: request.term },
+                        success: function (data) {
+                            response(data.map(function (item) {
+                                return {
+                                    label: item.userName,
+                                    value: item.userName,
+                                    userID: item.userID,
+                                    location: item.location
+                                };
+                            }));
+                        },
+                        error: function (error) {
+                            console.error(error);
+                        }
+                    });
+                },
+                minLength: 3,
+                select: function (event, ui) {
+                    console.log(ui.item);
+                    $('#Txt_UserID').val(ui.item.userID);
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $('#searchUserLink').click(function () {
+                var txtUserIdValue = $('#Txt_UserID').val();
+                var url = '@Url.Action("Index", "Users")' + '?id=' + txtUserIdValue;
+                window.location.href = url;
+            });
+        });
+    </script>
+}

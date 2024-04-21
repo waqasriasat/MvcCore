@@ -1,0 +1,379 @@
+﻿@model List<AdvLab_WebApp.Models.ReportingViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    .clearable-input {
+        position: relative;
+        display: inline-block;
+    }
+
+        .clearable-input > input {
+            padding-right: 1.4em;
+        }
+
+        .clearable-input:hover > [data-clear-input] {
+            display: block;
+        }
+
+        .clearable-input > [data-clear-input] {
+            display: none;
+            position: absolute;
+            top: 0px;
+            right: 0;
+            font-weight: bold;
+            font-size: 1.4em;
+            padding: 0 0.2em;
+            line-height: 1em;
+            cursor: pointer;
+        }
+
+        .clearable-input > input::-ms-clear {
+            display: none;
+        }
+
+    .PaddingAdjustment {
+        padding-right: 2px;
+        padding-left: 2px;
+        display: grid;
+    }
+
+    .textColor {
+        color: silver;
+        font-size: xx-small;
+    }
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        Array.prototype.forEach.call(document.querySelectorAll('.clearable-input>[data-clear-input]'), function (el) {
+            el.addEventListener('click', function (e) {
+                e.target.previousElementSibling.value = '';
+            });
+        });
+    });
+</script>
+<div></div>
+<div class="ActionHeading">
+    <div class="card panalheading">
+        <h2>BOOKING LIST</h2>
+    </div>
+    <p>
+        <a asp-action="Create">
+            <i class="fa fa-add BtnIcon1 HomeIcon"></i>
+        </a>
+    </p>
+
+    <div>
+        @* <div class="col-lg-12 col-md-12 col-sm-12 mb-12">
+        <div class="table-responsive">
+        <table id="datatableData" class="display" style="width:100%">
+        <thead>
+        <tr>
+        <th class="text-center">MRNo</th>
+        <th class="text-center">LabNo</th>
+        <th>RegDate</th>
+        <th>Patient Name</th>
+        <th>Client Name</th>
+        <th>Description</th>
+        <th>Status</th>
+        <td style="display:none">Contact</td>
+        <th class="text-center">View</th>
+        <th class="text-center">Print</th>
+        <th class="text-center">PDF</th>
+        </tr>
+
+        </thead>
+        @foreach (var d in Model)
+        {
+        <tr >
+        <td class="text-center">@d.DescCashier.MRNO</td>
+        <td class="text-center">@d.DescCashier.LabNo</td>
+        <td>@d.DescCashier.RegDate</td>
+        <td>@d.PatReg.FirstName</td>
+        <td>@d.AddClient.CName</td>
+        <td>@d.AddDescription.DescName</td>
+        <td>@d.DescLab.DStatus</td>
+        <td style="display:none">@d.PatReg.ContNo</td>
+        <td><a asp-action="View" asp-route-id="item.DescLab..ID" class="btn btn-info" style="width:75px">View</a></td>
+        <td><a asp-action="Print" asp-route-id="item.DescLab..ID" class="btn btn-primary" style="width:75px">Print</a></td>
+        <td><a asp-action="PDF" asp-route-id="item.DescLab..ID" class="btn btn-danger" style="width:75px">PDF</a></td>
+        </tr>
+        }
+        </table>
+        </div>
+        </div>
+        <div>*@
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 mb-12 SmallHide GVHeader">
+        <div class="row ">
+            <div class="col-10 col-md-10 col-lg-10">
+                <div class="row">
+                    <div class="col-1">
+                        <p class="card-text">MR #</p>
+                    </div>
+                    <div class="col-1">
+                        <p class="card-text">Lab #</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="card-text">Booking Date</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="card-text">Patient Name</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="card-text">Client Name</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="card-text">Description</p>
+                    </div>
+                    <div class="col-1">
+                        <p class="card-text">Status</p>
+                    </div>
+                    <div class="col-1">
+                        <p class="card-text">Contact #</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1 PaddingAdjustment">
+                        <div class="clearable-input">
+                            <input class="form-control textColor" type="text" placeholder="Search MRNO" id="txt_mrno" />
+                            <span data-clear-input>&times;</span>
+                        </div>
+                    </div>
+                    <div class="col-1 PaddingAdjustment">
+                        <div class="clearable-input">
+                            <input class="form-control textColor" type="text" placeholder="Search LabNo" id="txt_labno" />
+                            <span data-clear-input>&times;</span>
+                        </div>
+                    </div>
+                    <div class="col-2 PaddingAdjustment">
+                        <div class="clearable-input">
+                            <input class="form-control textColor" type="text" placeholder="Select Date Range" id="txt_daterange" />
+                            <span data-clear-input>&times;</span>
+                        </div>
+                    </div>
+                    <div class="col-2 PaddingAdjustment">
+                        <div class="clearable-input">
+                            <input class="form-control textColor" type="text" placeholder="Search Patient Name" id="txt_patientname" />
+                            <span data-clear-input>&times;</span>
+                        </div>
+                    </div>
+                    <div class="col-2 PaddingAdjustment">
+                        <div class="clearable-input">
+                            <input class="form-control textColor" type="text" placeholder="Search Client Name" id="txt_clientname" />
+                            <span data-clear-input>&times;</span>
+                        </div>
+                    </div>
+                    <div class="col-2 PaddingAdjustment">
+                        <div class="clearable-input">
+                            <input class="form-control textColor" type="text" placeholder="Search Description" id="txt_description" />
+                            <span data-clear-input>&times;</span>
+                        </div>
+                    </div>
+                    <div class="col-1 PaddingAdjustment">
+                        <div class="clearable-input">
+                            <select id="txt_status" class="form-control textColor">
+                                @foreach (var item in ViewBag.statusList as List<SelectListItem>)
+                                {
+                                    <option value="@item.Value">@item.Text</option>
+                                }
+                            </select>
+                           @*  <input class="form-control textColor" type="text" placeholder="Search Status" id="txt_status" /> *@
+                            <span data-clear-input>&times;</span>
+                        </div>
+                    </div>
+                    <div class="col-1 PaddingAdjustment">
+                        <div class="clearable-input">
+                            <input class="form-control textColor" type="text" placeholder="Search Contact" id="txt_Contact" />
+                            <span data-clear-input>&times;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 col-md-2 col-lg-2" style="align-content: flex-end;">
+                <div class="row">
+                    <div class="col-1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 PaddingAdjustment">
+                        <div class="btn-group" role="group" aria-label="Actions">
+                            <a id="searchLink" class="btn btn-warning" style="width:75px">Search</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @foreach (var item in Model)
+    {
+        <div class="col-12 col-md-12 col-lg-12 GVDetail">
+            <div class="row">
+                <div class="col-8 col-md-10 col-lg-10">
+                    <div class="row ">
+                        <div class="col-12 col-md-6 col-lg-1">
+                            <p class="card-text"><span class="smallAdd">MR # : </span>@Html.DisplayFor(modelItem => item.DescCashier.MRNO)</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-1">
+                            <p class="card-text"><span class="smallAdd">Lab # : </span>@Html.DisplayFor(modelItem => item.DescCashier.LabNo)</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2">
+                            <p class="card-text"><span class="smallAdd">Date : </span>@Html.DisplayFor(modelItem => item.DescCashier.RegDate)</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2">
+                            <p class="card-text"><span class="smallAdd">Patient Name : </span>@Html.DisplayFor(modelItem => item.PatReg.FirstName)</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2">
+                            <p class="card-text"><span class="smallAdd">Client Name : </span>@Html.DisplayFor(modelItem => item.AddClient.CName)</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2">
+                            <p class="card-text"><span class="smallAdd">Description : </span>@Html.DisplayFor(modelItem => item.AddDescription.DescName)</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-1">
+                            <p class="card-text"><span class="smallAdd">Status : </span>@Html.DisplayFor(modelItem => item.DescLab.DStatus)</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-1">
+                            <p class="card-text"><span class="smallAdd">Contact # : </span>@Html.DisplayFor(modelItem => item.PatReg.ContNo)</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-4 col-md-2 col-lg-2">
+                    <div class="row ">
+                        <div class="col-12 col-md-12 col-lg-4" style="padding-bottom: 5px;">
+                            <div class="btn-group" role="group" aria-label="Actions">
+                                <a asp-action="View" asp-route-id="item.DescLab..ID">
+                                    <i class="fa fa-book-open" style="height: 25px; color:orange"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="col-12 col-md-12 col-lg-4" style="padding-bottom: 5px;">
+                            <div class="btn-group" role="group" aria-label="Actions">
+                                <a asp-action="Print" asp-route-id="item.DescLab..ID">
+                                    <i class="fa fa-print" style="height: 25px; color:blue"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="col-12 col-md-12 col-lg-4" style="padding-bottom: 5px;">
+                            <div class="btn-group" role="group" aria-label="Actions">
+                                <a asp-action="PDF" asp-route-id="item.DescLab..ID">
+                                    <i class="fa fa-file-pdf" style="height: 25px; color:red"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    @* <script src="~/js/datatable_file.js"></script> *@
+
+
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+
+            $('#txt_clientname').autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: '/Reporting/ClientsearchingEvent',
+                        method: 'GET',
+                        data: { searchTerm: request.term },
+                        success: function (data) {
+                            response(data.map(function (item) {
+                                return {
+                                    label: item.clientName,
+                                    value: item.clientName
+                                };
+                            }));
+                        },
+                        error: function (error) {
+                            console.error(error);
+                        }
+                    });
+                },
+                minLength: 3,
+                select: function (event, ui) {
+                    console.log(ui.item);
+                    // $('#Txt_ClientID').val(ui.item.clientID);
+                    // $('#Txt_PerA').val(ui.item.perA);//BalanceAllow
+                    // $('#DiscountAllow').val(ui.item.discountPerAllow);
+                    // $('#BalanceAllow').val(ui.item.balancePerAllow);
+                    // $('#Txt_DescName-0').focus();
+                }
+            });
+        });
+        $(function () {
+
+            $('#txt_description').autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: '/Reporting/DescriptionsearchingEvent',
+                        method: 'GET',
+                        data: { searchTerm: request.term },
+                        success: function (data) {
+                            response(data.map(function (item) {
+                                return {
+                                    label: item.descName,
+                                    value: item.descName
+                                };
+                            }));
+                        },
+                        error: function (error) {
+                            console.error(error);
+                        }
+                    });
+                },
+                minLength: 3,
+                select: function (event, ui) {
+                    console.log(ui.item);
+                    // $('#Txt_ClientID').val(ui.item.clientID);
+                    // $('#Txt_PerA').val(ui.item.perA);//BalanceAllow
+                    // $('#DiscountAllow').val(ui.item.discountPerAllow);
+                    // $('#BalanceAllow').val(ui.item.balancePerAllow);
+                    // $('#Txt_DescName-0').focus();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $('#searchLink').click(function () {
+                var txtMrNoValue = $('#txt_mrno').val();
+                var txtLabNoValue = $('#txt_labno').val();
+                var txtRegDateValue = $('#txt_daterange').val();
+                var txtPatientNameValue = $('#txt_patientname').val();
+                var txtDescriptionNameValue = $('#txt_description').val();
+                var txtClientNameValue = $('#txt_clientname').val();
+                var txtStatusValue = $('#txt_status').val();
+                var txtContactValue = $('#txt_Contact').val();
+
+                // Construct the URL with all parameters
+                var url = '@Url.Action("SelectedIndex", "Reporting")' +
+                    '?mrno=' + txtMrNoValue +
+                    '&labno=' + txtLabNoValue +
+                    '&daterange=' + txtRegDateValue +
+                    '&patientname=' + txtPatientNameValue +
+                    '&description=' + txtDescriptionNameValue +
+                    '&clientname=' + txtClientNameValue +
+                    '&status=' + txtStatusValue +
+                    '&contact=' + txtContactValue;
+
+                window.location.href = url;
+            });
+
+        });
+    </script>
+}

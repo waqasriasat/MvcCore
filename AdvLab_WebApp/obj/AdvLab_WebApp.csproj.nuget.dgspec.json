@@ -1,21 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp.csproj": {}
+    "D:\\GIT Project\\Clone\\MvcCore\\AdvLab_WebApp\\AdvLab_WebApp.csproj": {}
   },
   "projects": {
-    "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp.csproj": {
+    "D:\\GIT Project\\Clone\\MvcCore\\AdvLab_WebApp\\AdvLab_WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp.csproj",
+        "projectUniqueName": "D:\\GIT Project\\Clone\\MvcCore\\AdvLab_WebApp\\AdvLab_WebApp.csproj",
         "projectName": "AdvLab_WebApp",
-        "projectPath": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp.csproj",
+        "projectPath": "D:\\GIT Project\\Clone\\MvcCore\\AdvLab_WebApp\\AdvLab_WebApp.csproj",
         "packagesPath": "C:\\Users\\waqas\\.nuget\\packages\\",
-        "outputPath": "D:\\Git_Project\\AdvLab\\Advlab\\AdvLab_WebApp\\AdvLab_WebApp\\AdvLab_WebApp\\obj\\",
+        "outputPath": "D:\\GIT Project\\Clone\\MvcCore\\AdvLab_WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\waqas\\AppData\\Roaming\\NuGet\\NuGet.Config",

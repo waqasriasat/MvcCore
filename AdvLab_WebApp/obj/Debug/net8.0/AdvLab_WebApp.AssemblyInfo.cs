@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdvLab_WebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a45e242f2b2c3edc5a48d9eb52c8863d1ab7f59")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+afd425e915aab8b656151d2487046ef29feee374")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdvLab_WebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdvLab_WebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

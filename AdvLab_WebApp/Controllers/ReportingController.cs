@@ -15,7 +15,7 @@ namespace AdvLab_WebApp.Controllers
         {
             _context = context;
             _webHost = webHost;
-        } 
+        }  
         public async Task<IActionResult> Index()
         {
             ViewBag.statusList = await Getstatus();
